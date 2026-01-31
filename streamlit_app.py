@@ -370,22 +370,23 @@ if 'prediction' in st.session_state and st.session_state.prediction:
 
     st.markdown(f"""
         <div style="
+            display:block;
             background-color: {bg_color}; 
-            padding: 60px 20px; 
-            border-radius: 15px; 
+            padding: 16px 18px; 
+            border-radius: 10px; 
             border: 4px solid {border_color};
             text-align: center;
-            width: 100%;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0px 4px 15px rgba(0,0,0,0.1);">
-            <p style="color: {text_color}; font-size: 24px; font-weight: 600; font-family: sans-serif; margin-bottom: 10px; letter-spacing: 1px;">
-                🌿 DIAGNOSIS REPORT
+            width: 92%;
+            max-width: 980px;
+            margin: 12px auto;
+            box-shadow: 0px 3px 12px rgba(0,0,0,0.06);">
+            <p style="color: {text_color}; font-size: 18px; font-weight: 600; font-family: sans-serif; margin-bottom: 6px; letter-spacing: 1px;">
+                 DIAGNOSIS REPORT
             </p>
-            <h1 style="color: {text_color}; font-size: 100px; font-weight: 900; font-family: sans-serif; margin: 0; line-height: 1.2;">
+            <h1 style="color: {text_color}; font-size: 60px; font-weight: 900; font-family: sans-serif; margin: 0; line-height: 1;">
                 {pred}
             </h1>
-            <div style="margin-top: 20px; height: 5px; width: 100px; background-color: {border_color}; margin-left: auto; margin-right: auto; border-radius: 5px;"></div>
+            <div style="margin-top: 10px; height: 5px; width: 90px; background-color: {border_color}; margin-left: auto; margin-right: auto; border-radius: 5px;"></div>
         </div>
         """, unsafe_allow_html=True)
 
