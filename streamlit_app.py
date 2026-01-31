@@ -15,7 +15,7 @@ from sklearn.ensemble import RandomForestClassifier
 SENSOR_PORT = "/dev/tty.usbserial-0001"
 BAUDRATE = 9600
 READING_INTERVAL = 5
-filename='/Users/haroldhoffmann/Desktop/Research FY26/REDO_ADC_GAS/TidyData_E2/E2_Features_ZEROED_PPB.xlsx'
+filename='E2_Features_ZEROED_PPB.xlsx'
 train_df=pd.read_excel(filename)
 outliers=['Healthy-16 D2', 'Inoculated-8 D2', 'Baseline-Blank T9 D4', 'Baseline-Blank T7 D3', 'Baseline-Blank T4 D3','Baseline-Blank T7 D1']
 df=train_df[~train_df['Plant Id'].isin(outliers)]
